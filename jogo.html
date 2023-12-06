@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo Educacional</title>
+    <script src="js/main.js"></script>
+    <link rel="stylesheet" href="css/jogo.css">
+</head>
+<body>
+    <h1>Jogo Educacional</h1>
+    <h3>Associe corretamente os balões de misandria e misoginia arrastando-as com as respectivas informações </h3>
+    
+    <div class="premio">
+    <h1 id="premio"></h1>
+    </div>
+
+    <section>
+    <div class="escolhas">
+    <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
+        <img src="img/Misandria.png" draggable="true" ondragstart="drag(event)" id="misan1" >
+      </div>
+      
+      <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
+        <img src="img/Misoginia.png" draggable="true" ondragstart="drag(event)" id="miso1" >
+      </div>
+
+      <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
+        <img src="img/Misandria.png" draggable="true" ondragstart="drag(event)" id="misan2" >
+      </div>
+
+      <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
+        <img src="img/Misoginia.png" draggable="true" ondragstart="drag(event)" id="miso2" >
+      </div>
+
+    </div>
+
+    <div class="respostas">
+
+
+        <div class="quadrares">
+        
+      <div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+      <div class="texto">      
+      <p>Atualmente, devido à ampliação dos movimentos feministas, o termo é sinônimo de Androfobia.</p>
+    </div>
+    </div>
+
+    <div class="quadrares">
+        <div id="div3" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        <div class="texto">      
+        <p>A principal responsável por grande parte dos assassinatos de mulheres, também conhecido por feminicídio.</p>
+      </div>
+      </div>
+
+
+      <div class="quadrares">
+        <div id="div4" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        <div class="texto">      
+        <p>Esse conceito abarca os sentimentos de desprezo, preconceito, repulsa e aversão às mulheres e ao que remete ao feminino.</p>
+      </div>
+      </div>
+
+
+      <div class="quadrares">
+        <div id="div5" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        <div class="texto">      
+        <p>Pode se manifestar de várias maneiras, incluindo a discriminação sexual, a difamação dos homens ou mais amplamente o ódio, o medo, a raiva e o desprezo aos homens.</p>
+      </div>
+      </div>
+    </div>
+    </section>
+
+    <button onclick="reset()">Reiniciar</button>
+
+</body>
+</html>
